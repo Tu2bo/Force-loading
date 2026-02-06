@@ -1,7 +1,7 @@
 This repository contains the experimental data and computational procedures associated with the paper "Force Loading on Molecular Clutches Governs the Stability of Cell Lamellipodia."
 
 MainTime.m
-Main simulation script. Runs stochastic Monte Carlo simulations and mean-field (ODE) simulations of the BR-integrated motor–clutch model, and analyzes force loading rate, spreading radius, and force per bond.
+Main simulation script. Runs stochastic Monte Carlo simulations and mean-field (ODE) simulations of the BR-integrated motor–clutch model, and analyzes cell spreading radius, loading rate, and force magnitude.
 
 MC_BR_motor_clutch_model.m
 Stochastic Monte Carlo implementation of the BR-integrated motor–clutch model.
