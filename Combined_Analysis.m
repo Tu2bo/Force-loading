@@ -1,26 +1,34 @@
-% Xue R. et al., "Force loading on molecular clutches governs the stability of cell lamellipodia".
+%% Analysis script for experimental oscillation data
+% This script analyzes the leading-edge oscillation data used in:
+%
+% Xue R, Kang L, Chen Y, Yang H, Jiang H, Gong Z.
+% "Force loading on molecular clutches governs the stability of cell lamellipodia."
+% Proceedings of the National Academy of Sciences, 2026.
+% DOI: https://doi.org/10.1073/pnas.2604349123
 %
 % Description:
-%   This script performs a comprehensive analysis of oscillation data stored
-%   in an Excel file. It is divided into two main parts:
+%   This script performs the analysis of oscillation data stored in an Excel file.
+%   It is divided into two main parts:
 %
-%   Part 1: Statistical Analysis
+%   Part 1: Statistical analysis
 %       - Extracts oscillation amplitude and period.
-%       - Generates bar plots with individual data points (scatter).
-%       - Performs statistical significance testing (Mann-Whitney U test).
+%       - Generates bar plots with individual data points.
+%       - Performs statistical significance testing using the Mann-Whitney U test.
 %
-%   Part 2: Spectral and Temporal Analysis
-%       - Computes Power Spectral Density (PSD).
+%   Part 2: Spectral and temporal analysis
+%       - Computes the power spectral density (PSD).
 %       - Generates aggregate PSD plots with standard error shading.
 %
 % Input:
-%   - 'All_Data_Combined.xlsx': Excel file containing time-series data.
-%     Each sheet represents a sample. Sheet names must contain specific keywords.
+%   - All_Data_Combined.xlsx: Excel file containing time-series data.
+%     Each sheet represents one sample. Sheet names should contain the
+%     corresponding experimental condition keywords.
 %
 % Output:
 %   - Figures for statistical comparisons, representative traces, and PSDs.
 %
-% Date: Feb 2026
+% Developed and tested in MATLAB R2024a.
+% Last updated: May 2026
 
     clc; clear; close all;
 
