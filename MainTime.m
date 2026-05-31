@@ -1,14 +1,22 @@
-%% Main simulation script for the BR-integrated motor–clutch model
-% This code implements the minimal mechanochemical model developed in:
-% Xue R. et al., "Force loading on molecular clutches governs the stability of cell lamellipodia".
+%% Main simulation script for the BR-integrated motor-clutch model
+% This script implements the minimal mechanochemical model developed in:
+%
+% Xue R, Kang L, Chen Y, Yang H, Jiang H, Gong Z.
+% "Force loading on molecular clutches governs the stability of cell lamellipodia."
+% Proceedings of the National Academy of Sciences, 2026.
+% DOI: https://doi.org/10.1073/pnas.2604349123
+%
 % This script performs:
-% (i) Stochastic Monte Carlo simulations of the BR-integrated motor–clutch model;
-% (ii) Mean-field (ODE) simulations for direct comparison;
-% (iii) Quantitative analysis of force loading rate, cell spreading radius,
+% (i) Stochastic Monte Carlo simulations of the BR-integrated motor-clutch model;
+% (ii) Mean-field ODE simulations for direct comparison;
+% (iii) Quantitative analysis of the force-loading rate, cell spreading radius,
 %       and force magnitude per bond.
 %
-% All model parameters and their physical meanings are provided in the main text and Supporting Information.
-% Date: Jan 2026
+% All model parameters and their physical meanings are provided in the main text
+% and Supporting Information of the published article.
+%
+% Developed and tested in MATLAB R2024a.
+% Last updated: May 2026
 
 clc;
 clear;
